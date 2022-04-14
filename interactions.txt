@@ -1,0 +1,18 @@
+//Author: Mia Troiano
+
+Triggers:
+pressSKY triggers mouse pressed, when you press the sky it changes from light blue to dark blue.
+pressSun triggers mouse toggle, when the sun is clicked it grows in size and changes to orange when released to goes back to the original size and color.
+pressGrass triggers mouse dragged, when a grass piece is dragged it moves the grass to where you stop dragging and creates a new bigger cloud.
+
+Effects:
+color : the sky changes from light blue to dark blue, and the sun goes from yellow to orange.
+move : grass is moved to where the mouse brings it.
+resize : the sun grows and shrinks when pressed and released new cloud is bigger than old clouds.
+creat: a new cloud is created when grass is dragged 
+
+Associations:
+Press Grass ,knows about cloud but cloud doesn't know about PressGrass or grass
+
+Polymorphism:
+the color interface has a colors method, both PressSun and PressSky use the color interface to change the colors of sun and sky
